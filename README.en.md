@@ -178,3 +178,20 @@ Under the EU Consumer Rights Directive, immediate access to digital media servic
 > **Notice**: This public showcase repository is published exclusively as a **technical architecture case study** to demonstrate software engineering standards, DevSecOps principles, and system design patterns.
 > 
 > The proprietary source code, internal business logic, production configuration secrets, and database schemas remain private property. All rights reserved under applicable copyright and commercial protection laws.
+
+---
+
+## 👨‍💻 Author & Contact
+
+**Aarón Gómez** — *DevSecOps | Desarrollo & Ciberseguridad*
+
+* 🌐 **Website / Portfolio**: [aaronsgomez.es](https://aaronsgomez.es)
+* 🐙 **GitHub**: [github.com/AaronSGomez](https://github.com/AaronSGomez)
+* 💼 **LinkedIn**: [linkedin.com/in/aaronsgomez](https://www.linkedin.com/in/aaronsgomez)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+

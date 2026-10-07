@@ -178,3 +178,20 @@ En cumplimiento con la Directiva de Derechos de los Consumidores de la UE, la ej
 > **Aviso Legal**: Este repositorio se publica exclusivamente como un **caso de estudio técnico y muestra de arquitectura de software** para demostrar estándares de ingeniería, arquitectura de sistemas y prácticas DevSecOps.
 > 
 > El código fuente propietario, la lógica interna de negocio, los secretos de configuración y los esquemas de producción permanecen en reserva privada. Todos los derechos reservados bajo las leyes de propiedad intelectual y derecho comercial aplicables.
+
+---
+
+## 👨‍💻 Autor & Contacto
+
+**Aarón Gómez** — *DevSecOps | Desarrollo & Ciberseguridad*
+
+* 🌐 **Sitio Web / Portfolio**: [aaronsgomez.es](https://aaronsgomez.es)
+* 🐙 **GitHub**: [github.com/AaronSGomez](https://github.com/AaronSGomez)
+* 💼 **LinkedIn**: [linkedin.com/in/aaronsgomez](https://www.linkedin.com/in/aaronsgomez)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia **MIT** — consulta el archivo [LICENSE](LICENSE) para más detalles.
+
