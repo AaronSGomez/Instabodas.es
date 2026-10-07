@@ -20,6 +20,36 @@
 
 ---
 
+## ✨ Commercial Value Proposition: What Makes InstaBodasQR Unique?
+
+**InstaBodasQR** transforms any wedding or social event into an unforgettable interactive memory, combining spontaneous guest involvement with total control for the couple.
+
+### 📸 1. Instant Guest Photo Capture (Zero Friction)
+* **No App Downloads, No Registration**: Guests simply scan the QR code on their table card and open the web app directly in their mobile browser.
+* **Batch Uploads & Digital Guestbook**: Guests can select multiple photos/videos in full resolution and attach personal congratulations (up to 150 characters) for the digital guestbook.
+* **Interactive Gallery & Lightbox**: Fluid viewing filtered by categories (*Couple, Banquet, Party, Other*) with direct downloads in original raw quality.
+
+### 📺 2. Live Wall for TV & Projectors (Real-Time Slideshow)
+* **Big Screen Projection**: Designed for SmartTVs and projectors during the banquet or party.
+* **Instant Animations**: Powered by WebSockets, every time a photo is approved, the screen projects an animated notification with the guest’s wishes without page reloads.
+
+### 👰 3. Intelligent Moderation Dashboard (3 Control Modes)
+* 🟢 **Total Trust (Automatic)**: Instant live publication to gallery and TV.
+* 🟡 **Moderation Filter (Manual)**: Photos wait in a review queue. Generates a **Delegated Moderator Link** (`?mod=...`) so wedding planners or friends can moderate from their phones without access to bank details or billing settings.
+* 🔴 **Surprise Mode (Post-Wedding)**: All uploads are saved secretly. The TV and gallery display thank-you banners until the couple decides to reveal the album.
+
+### 📖 4. Scrapbook PDF Guestbook & Full ZIP Export
+* **Scrapbook-Style PDF Album**: Replaces boring spreadsheets with a print-ready PDF styled like a handcrafted physical scrapbook with polaroid frames, subtle rotations, and translucent washi tape.
+* **Full RAW Archive (.ZIP)**: Instant single-click ZIP archive containing all approved full-resolution photos.
+
+### 💌 5. Complete Wedding Planner Ecosystem (Premium Plan)
+* **Interactive Digital Invitation**: Custom public webpage with couple photos, bank account details (IBAN), and Bizum.
+* **RSVP & Allergy Management**: Track guest confirmations in real-time (adults, children, special menus, allergies, bus transfers, hotel reservations).
+* **Visual Interactive Seating Chart**: Drag-and-drop seating layout editor supporting round, rectangular, or U-shaped tables.
+* **Budget, Vendor & DJ Playlist**: Expense tracking, vendor appointment calendar, and a guest song request module with couple veto power.
+
+---
+
 ## 🎯 Technical Challenges & Core Objectives
 
 Designing a digital platform for high-density live events presents unique engineering constraints: burst traffic spikes, zero guest friction, dynamic screen synchronization, and strict privacy regulations.
@@ -148,12 +178,3 @@ Under the EU Consumer Rights Directive, immediate access to digital media servic
 > **Notice**: This public showcase repository is published exclusively as a **technical architecture case study** to demonstrate software engineering standards, DevSecOps principles, and system design patterns.
 > 
 > The proprietary source code, internal business logic, production configuration secrets, and database schemas remain private property. All rights reserved under applicable copyright and commercial protection laws.
-
----
-
-## 🏷️ Repository Metadata (For Technical Recruiters & SEO)
-
-* **GitHub About Description**:
-  `High-availability, privacy-first event media SaaS architecture case study with real-time WebSockets, R2 storage & DevSecOps.`
-* **Topics / Tags**:
-  `nextjs`, `react19`, `typescript`, `supabase`, `postgresql`, `cloudflare-r2`, `stripe-api`, `devsecops`, `software-architecture`, `realtime`, `system-design`, `gdpr-compliance`, `tailwind-css`, `saas-architecture`, `case-study`

@@ -20,6 +20,36 @@
 
 ---
 
+## ✨ Propuesta de Valor Comercial: ¿Qué ofrece InstaBodasQR?
+
+**InstaBodasQR** transforma la experiencia de cualquier boda o evento social en un recuerdo inolvidable, combinando la espontaneidad de los invitados con el control total para los novios.
+
+### 📸 1. Captura Instantánea para Invitados (Sin Fricción)
+* **Cero Descargas ni Registros**: Los invitados escanean el código QR en el tarjetón de su mesa e ingresan directamente desde el navegador de su móvil.
+* **Subida en Lote & Libro de Firmas Digital**: Permite seleccionar múltiples fotos y vídeos en alta calidad acompañados de felicitaciones personalizadas (hasta 150 caracteres) para el libro de firmas digital.
+* **Galería Interactiva & Lightbox**: Visualización fluida con filtros por categorías (*Novios, Banquete, Baile, Otros*) y descarga directa en resolución original.
+
+### 📺 2. Muro en Vivo para TV y Proyectores (Live Slideshow)
+* **Proyección en Tiempo Real**: Diseñado para SmartTVs y proyectores durante el banquete o la fiesta.
+* **Animaciones al Instante**: Gracias a WebSockets, cada vez que una foto es aprobada en el panel, la pantalla proyecta una alerta animada destacada con la dedicatoria del invitado sin necesidad de recargar.
+
+### 👰 3. Panel de Moderación Inteligente (3 Modos de Control)
+* 🟢 **Confianza Total (Automático)**: Publicación inmediata en la galería y en la pantalla de la TV.
+* 🟡 **Filtro de Moderación (Manual)**: Las fotos quedan en cola de revisión. Permite generar un **Enlace de Moderador Delegado** (`?mod=...`) para que el Wedding Planner o un amigo modere desde su móvil sin acceso a datos bancarios ni ajustes.
+* 🔴 **Modo Sorpresa (Post-Boda)**: Todo lo subido se archiva en secreto. La TV y la galería muestran carteles fijos de agradecimiento hasta que los novios decidan revelar el álbum.
+
+### 📖 4. Libro de Firmas Scrapbook PDF & Descarga ZIP
+* **PDF Maquetado Estilo Scrapbook**: Sustituye los listados aburridos por un PDF listo para imprimir que simula un libro físico pegado a mano con fotos polaroid, ligeras rotaciones asimétricas y washi tapes translúcidos.
+* **Descarga Completa (.ZIP)**: Empaquetado instantáneo con todas las fotografías aprobadas en calidad original.
+
+### 💌 5. Ecosistema Completo de Wedding Planner (Plan Premium)
+* **Invitación Digital Interactiva**: Tarjeta web pública personalizada con foto de los novios, datos bancarios (IBAN) y Bizum.
+* **Gestor de Confirmaciones RSVP**: Control detallado de asistencia (adultos, niños, menús especiales, alérgenos, autobús y reserva de hotel).
+* **Organizador Visual de Mesas**: Diseñador interactivo de planos con mesas redondas, rectangulares o en U y distribución de sillas.
+* **Presupuesto, Proveedores y Música DJ**: Control de gastos/ingresos, agenda de citas y módulo de peticiones de canciones para el DJ con función de veto por los novios.
+
+---
+
 ## 🎯 Retos Técnicos y Objetivos Core
 
 El diseño de una plataforma digital para eventos en vivo de alta densidad presenta desafíos de ingeniería complejos: picos repentinos de tráfico, cero fricción para los asistentes, sincronización de pantallas en tiempo real y regulaciones de privacidad estrictas.
@@ -118,7 +148,7 @@ Cada espacio de trabajo se instancia con un `UUID v4` no enumerable generado med
 
 ### 2. Seguridad a Nivel de Fila (RLS) Granular y RBAC
 Todas las tablas de PostgreSQL (`weddings`, `photos`, `invitados`, `mesas`, `gastos`) aplican reglas de RLS obligatorias:
-* **Acceso Anónimo de Invitados**: Limitado a operaciones `INSERT` y `SELECT` que coincidan estrictamente con el UUID `wedding_id`.
+* **Acceso Anónimo de Invitados**: Limitado a operaciones `INSERT` y `SELECT` que coincidan strictly con el UUID `wedding_id`.
 * **Sesión Autenticada de los Novios**: Privilegios totales de `SELECT`/`UPDATE` restringidos únicamente al UID de su sesión autenticada.
 * **Acceso de Moderador Delegado (`?mod=[weddingId]`)**: Restringe la interfaz exclusivamente a la cola de moderación de fotos, bloqueando accesos a ajustes, cuentas bancarias, listas de invitados y descargas de datos.
 * **Autorización SuperAdmin**: Las rutas `/api/admin/*` validan tanto el token JWT como la inclusión del correo en la lista blanca de administradores (`NEXT_PUBLIC_ADMIN_EMAILS`).
@@ -148,12 +178,3 @@ En cumplimiento con la Directiva de Derechos de los Consumidores de la UE, la ej
 > **Aviso Legal**: Este repositorio se publica exclusivamente como un **caso de estudio técnico y muestra de arquitectura de software** para demostrar estándares de ingeniería, arquitectura de sistemas y prácticas DevSecOps.
 > 
 > El código fuente propietario, la lógica interna de negocio, los secretos de configuración y los esquemas de producción permanecen en reserva privada. Todos los derechos reservados bajo las leyes de propiedad intelectual y derecho comercial aplicables.
-
----
-
-## 🏷️ Metadatos del Repositorio (SEO y Reclutadores Técnicos)
-
-* **Descripción "About" de GitHub**:
-  `High-availability, privacy-first event media SaaS architecture case study with real-time WebSockets, R2 storage & DevSecOps.`
-* **Topics / Etiquetas**:
-  `nextjs`, `react19`, `typescript`, `supabase`, `postgresql`, `cloudflare-r2`, `stripe-api`, `devsecops`, `software-architecture`, `realtime`, `system-design`, `gdpr-compliance`, `tailwind-css`, `saas-architecture`, `case-study`
